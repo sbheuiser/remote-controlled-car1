@@ -1,13 +1,19 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
-        cuteBot.turnleft()
-        cuteBot.motors(0, 30)
+        for (let index = 0; index <= 5; index++) {
+            cuteBot.turnleft()
+            cuteBot.motors(0, 30)
+        }
     } else if (receivedNumber == 2) {
-        cuteBot.turnright()
-        cuteBot.motors(30, 0)
+        for (let index = 0; index <= 5; index++) {
+            cuteBot.turnright()
+            cuteBot.motors(30, 0)
+        }
     } else if (receivedNumber == 3) {
-        cuteBot.forward()
-        cuteBot.motors(30, 30)
+        for (let index = 0; index <= 5; index++) {
+            cuteBot.forward()
+            cuteBot.motors(30, 30)
+        }
     } else if (receivedNumber == 4) {
         cuteBot.stopcar()
     }
